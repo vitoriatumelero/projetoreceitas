@@ -1,0 +1,67 @@
+
+    h1 {
+    color: #528657;
+    font-size: 1cm;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 5;
+    text-align: left;
+    }
+    h2 {
+    color: #528657;
+    font-size: 0.5cm;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 5;
+    text-align: left;
+    }
+    .menu_1{
+        background-color:  #E4DEDC;
+        padding: 10px;
+    }
+    .menu_2{
+        background-color:  #528657;
+        padding: 155px;
+    }
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    }
+    #profile-icon {
+    position: fixed;
+    top: 40px;
+    right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:  #528657;
+    text-decoration: none;
+    font-size: 14px;
+    }
+    #profile-icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+  }
+  .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 100px;
+    }
+    .square {
+        width: 200px; /* Defina o tamanho do quadrado */
+        height: 200px; /* Defina a altura do quadrado */
+        background-color: #E4DEDC;
+        border-radius: 15px;
+        text-align: center;
+        overflow: hidden; /* Garante que as imagens não ultrapassem os limites do quadrado */
+    }
+    
+    .square img {
+        width: 100%; /* A largura da imagem é 100% do tamanho do quadrado */
+        height: 100%; /* A altura da imagem é 100% do tamanho do quadrado */
+        object-fit: cover; /* Ajusta a imagem para cobrir o espaço disponível sem distorção */
+    }
+    
+

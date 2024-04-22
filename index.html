@@ -2,120 +2,87 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Receitando.com</title>
+    <link rel="stylesheet" href="index.css">
 </head>
-<style>
-    h1 {
-    color: #528657;
-    font-size: 1cm;
-    font-family: 'Times New Roman', Times, serif;
-    margin-top: 5;
-    text-align: left;
-    }
-    h2 {
-    color: #528657;
-    font-size: 0.5cm;
-    font-family: 'Times New Roman', Times, serif;
-    margin-top: 5;
-    text-align: left;
-    }
-    .menu_1{
-        background-color:  #E4DEDC;
-        padding: 10px;
-    }
-    .menu_2{
-        background-color:  #528657;
-        padding: 155px;
-    }
-    body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Times New Roman', Times, serif;
-    }
-    #profile-icon {
-    position: fixed;
-    top: 40px;
-    right: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color:  #528657;
-    text-decoration: none;
-    font-size: 14px;
-    }
-    #profile-icon img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-bottom: 5px;
-  }
-  .container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 100px;
-    }
-    .square {
-        width: 90px;
-        padding:90px;
-        background-color: #E4DEDC;
-        border-radius: 15px;
-        text-align: center;
-    }
-    img {
-        max-width: 100%;
-        border-radius: 10px;
-    }
-    
-   
-  
-</style>
-
+<link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
 <body>
-    <header class="menu_1">
-        <h1>Receitando.com</h1>
-        <h2>As receitas mais práticas em um só lugar!</h2>
-        <a id="profile-icon" href="#">
-            <img src="imagens\perfil.jpg" alt="Ícone de perfil">
-            Meu Perfil
-          </a>
-    </header>
-    <main class="menu_2">
-      <div class="container">
-        <div class="square">
-          <div class = "img">
-              <img src="imagens\cafe.jpg" alt="Imagem 1" >
-          </div>
+    <div class="container" >
+      <!--alterna entre as telas de login e cadastro -->
+      <a class="links" id="paracadastro"></a>
+      <a class="links" id="paralogin"></a>
+        <div class="center">
+            <p>
+                <img src="logo.png" height="100" width="100"></img>
+                <h1 class="titulo-receitando">Receitando.com</h1>
+                <h2>As receitas mais práticas, em um só lugar!</h2>
+            </p>
         </div>
-        <div class="square">
-            <img src="imagens\almoco.jpg" alt="Imagem 2">
+      <div class="content">      
+        <!--FORMULÁRIO DE LOGIN-->
+        <div id="login">
+          <form id= "form_login" method="post" action=""> 
+            <h1>Login</h1> 
+            <p> 
+              <label for="email_login">Seu email</label>
+              <input id="email_login" name="email_login" required="required" type="text" placeholder="E-mail"/>
+            </p>
+             
+            <p> 
+              <label for="senha_login">Sua senha</label>
+              <input id="senha_login" name="senha_login" required="required" type="password" placeholder="Senha" /> 
+            </p>
+             
+            <p> 
+              <input type="checkbox" name="manterlogado" id="manterlogado" value="" /> 
+              <label for="manterlogado">Manter-me logado</label>
+            </p>
+             
+            <p> 
+              <input type="submit" value="Enviar" /> 
+            </p>
+             
+            <p class="link">
+              Ainda não tem uma conta?
+              <a href="#paracadastro">Cadastre-se</a>
+            </p>
+          </form>
         </div>
-        <div class="square">
-            <img src="imagens\janta.png" alt="Imagem 3">
+   
+        <!--FORMULÁRIO DE CADASTRO-->
+        <div id="cadastro">
+          <form method="post" action=""> 
+            <h1>Cadastro</h1> 
+             
+            <p> 
+              <label for="nome_cad">Seu nome</label>
+              <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="nome" />
+            </p>
+             
+            <p> 
+              <label for="email_cad">Seu e-mail</label>
+              <input id="email_cad" name="email_cad" required="required" type="email" placeholder="contato@htmlecsspro.com"/> 
+            </p>
+             
+            <p> 
+              <label for="senha_cad">Sua senha</label>
+              <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="ex. 1234"/>
+            </p>
+             
+            <p> 
+              <input type="submit" value="Cadastrar"/> 
+            </p>
+             
+            <p class="link">  
+              Já tem uma conta?
+              <a href="#paralogin"> Ir para Login </a>
+            </p>
+            <p class= "boasvindas">
+          </form>
         </div>
-        <div class="square">
-            <img src="imagens\sobremesa.jpg" alt="Imagem 4">
-        </div>
-        <div class="square">
-            <img src="imagens\ld.jpg" alt="Imagem 5">
-        </div>
-        <div class="square">
-            <img src="imagens\ls.jpg" alt="Imagem 6">
-        </div>
-        <div class="square">
-            <img src="imagens\aperitivo.jpg" alt="Imagem 7">
-        </div>
-        <div class="square">
-            <img src="imagens\bebidas.jpg" alt="Imagem 8">
-        </div>
-
-    </main>
-    <button onclick="alert('Você clicou no botão!')">Clique-me</button>
-</body>
-</html>
-
-
-
-
+      </div>
+    </div>  
+    <script src="script.js"></script>
+  </body>
+  </html>
