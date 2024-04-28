@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almoço - Receitando.com</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Merriweather';
+        }
+
+        .background {
+            background-color: #528657;
+            color: #E4DEDC;
+        }
+
+        .alt-background {
+            background-color: #E4DEDC;
+            color: #528657;
+        }
+
+        .menu_1 {
+            background-color: #E4DEDC;
+            padding: 10px;
+        }
+
+        .menu_1 h1 {
+            color: #528657;
+            font-size: 1cm;
+            margin-top: 5px;
+            text-align: left;
+        }
+
+        .menu_1 h2 {
+            color: #528657;
+            font-size: 0.5cm;
+            margin-top: 5px;
+            text-align: left;
+        }
+
+        #profile-icon {
+            position: fixed;
+            top: 40px;
+            right: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #528657;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        #profile-icon img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-bottom: 5px;
+        }
+
+        .square {
+            width: 100%;
+            height: 150px; /* Altura padrão para todas as divs */
+            text-align: center;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+
+        /* Aplique um estilo diferente para a primeira div */
+        .square:first-of-type {
+            height: 100px !important; /* Altura reduzida para a primeira div */
+            font-weight: bold;
+            font-family: 'Merriweather';
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <header class="menu_1">
+        <h1>Receitando.com</h1>
+        <h2>As receitas mais práticas em um só lugar!</h2>
+        <a id="profile-icon" href="#">
+            <img src="perfil.jpg" alt="Ícone de perfil">
+            Meu Perfil
+        </a>
+    </header>
+
+    <div class="square background">Almoço</div>
+    <div class="square alt-background">Receita 1</div>
+    <div class="square background">Receita 2</div>
+    <div class="square alt-background">Receita 3</div>
+    <div class="square background">Receita 4</div>
+    <div class="square alt-background">Receita 5</div>
+    <div class="square background">Receita 6</div>
+    <div class="square alt-background">Receita 7</div>
+    <div class="square background">Receita 8</div>
+</body>
+</html>
